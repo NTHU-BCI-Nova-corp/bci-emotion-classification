@@ -1,13 +1,20 @@
 [//]: # (Styles:)
 
-<style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-</style>
+[//]: # (<style>)
+
+[//]: # (.center {)
+
+[//]: # (  display: block;)
+
+[//]: # (  margin-left: auto;)
+
+[//]: # (  margin-right: auto;)
+
+[//]: # (  width: 70%;)
+
+[//]: # (})
+
+[//]: # (</style>)
 
 
 [//]: # (Actual Github Page:)
@@ -80,6 +87,38 @@ Sentiment Classification with an EEG-based Brain-machine Interface":
   <img src="Pictures/4_channels_used.png" alt="Channels used" >
   <figcaption>Fig.1 - EEG sensors TP9, AF7, AF8 and TP10 of the Muse headband</figcaption>
 </figure>
+<br>
+
+The data was collected from 2 individuals, one male and one female. They watched 6 films
+for 60 seconds each, for each of the 3 different mental states, producing 18 minutes of data
+for each individual. This results in 36 minutes of EEG in total (18 minutes x 2). The resulting
+dataset results in 324,000 points (36 minutes x 60 seconds/minute x 150 Hz/second). The following 
+movies and their
+
+Before doing any feature extraction method, they down sampled the data to 150 Hz. After that they
+rely on getting statistical features from the EEG data, FFT, max-min features in
+temporal sequences, among others, in time windows to extract the best information
+from the EEG data. The sliding window was set to 1s, and all the statistical features
+are computed in this timeframe. Then some overlap for each next window was performed
+at 0.5Hz.
+
+<h4>Features Used:</h4>
+
+<ul>
+    <li>
+        Statistical Features:
+    </li>
+    <li>
+        Max, Min, Derivatives:
+    </li>
+    <li>
+        Frequency Domain:
+    </li>
+    <li>
+        Frequency Domain:
+    </li>
+
+</ul>
 
 <br>
 
