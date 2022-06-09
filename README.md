@@ -100,7 +100,7 @@ rely on getting statistical features from the EEG data, FFT, max-min features in
 temporal sequences, among others, in time windows to extract the best information
 from the EEG data. The sliding window was set to 1s, and all the statistical features
 are computed in this timeframe. Then some overlap for each next window was performed
-at 0.5Hz.
+at 0.5Hz. 
 
 <h4>Features Used:</h4>
 
