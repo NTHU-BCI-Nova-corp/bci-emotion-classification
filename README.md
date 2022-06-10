@@ -189,7 +189,7 @@ Random Forest Classifier.
   <img src="Pictures/GRU.PNG" alt="GRU" >
   <figcaption>Gated Recurrent Unit Model </figcaption>
 </figure>
-<br>
+<br><br>
 
 <p>Recurrent neural networks are great at "remembering" information and sequenced data,
 so they are great for this brain-wave type of data. GRU is a simpler version of a Long-Short
