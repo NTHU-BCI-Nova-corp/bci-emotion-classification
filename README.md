@@ -124,7 +124,11 @@ at 0.5Hz.
 
 <h3>Seed IV Dataset</h3>
 
+<h4>Data Acquisition</h4>
+
 The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study. These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the sessions is 24 trials.
+
+
 
 <br><br><br><br><br><br><br>
 
