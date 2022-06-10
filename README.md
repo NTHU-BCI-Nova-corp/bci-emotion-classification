@@ -62,7 +62,7 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
     <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> 
                 DataSet: SEED-IV</a>
     </li>
-   <li>
+    <li>
     <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> 
                 Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>
     </li>
