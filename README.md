@@ -66,6 +66,14 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
     <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> 
                 Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>
     </li>
+    <li>
+    <a href= "https://ieeexplore.ieee.org/document/7104132"> 
+                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks
+    </li>
+    <li>
+    <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> 
+                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG
+    </li>
 </ul>
 
 
