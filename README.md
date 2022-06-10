@@ -56,15 +56,23 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
                 Paper: Mental Emotional Sentiment Classification with an EEG-based Brain-machine Interface</a>
     </li>
 </ul>
-<p> SEED-IV Dataset Paper based on this dataset:</p>
+<p> Dataset Paper based on SEED-IV's dataset:</p>
 <ul>
     <li>
     <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> 
                 DataSet: SEED-IV</a>
     </li>
-   <li>
+    <li>
     <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> 
                 Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>
+    </li>
+    <li>
+    <a href= "https://ieeexplore.ieee.org/document/7104132"> 
+                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks
+    </li>
+    <li>
+    <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> 
+                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG
     </li>
 </ul>
 
@@ -123,6 +131,41 @@ at 0.5Hz.
 <br>
 
 <h3>Seed IV Dataset</h3>
+
+<h4>Data Acquisition</h4>
+
+The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study. These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the sessions is 24 trials.  
+
+<h4>Feature Extraction</h4>
+
+The signal is sliced into 4-second nonoverlapping segments
+
+<h4>EEG Features</h4>
+
+The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density (PSD) and differential entropy (DE) to eaxtract each segment at 5 frequency bands (delta, theta, alpha, beta, and gamma). The data also provide smoothing technique between linear dynamic system (LDS) and moving averages
+
+<ul>
+    <li>
+        Bandpass Filter
+    </li>
+    <li>
+        Power Spectral Density
+    </li>
+    <li>
+        Differential Entropy
+    </li>
+    <li>
+        Linear Dynamic Sysstem
+    </li>
+    <li>
+        Moving Averages
+    </li>
+
+</ul>
+
+<h4>Eye Movement Features</h4>
+
+ Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
 
 <br><br><br><br><br><br><br>
 
