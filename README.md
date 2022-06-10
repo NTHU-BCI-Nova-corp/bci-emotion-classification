@@ -186,7 +186,7 @@ Random Forest Classifier.
 <br>
 
 <figure class="center">
-  <img src="Pictures/GRU.png" alt="GRU" >
+  <img src="Pictures/GRU.PNG" alt="GRU" >
   <figcaption>Gated Recurrent Unit Model </figcaption>
 </figure>
 <br>
