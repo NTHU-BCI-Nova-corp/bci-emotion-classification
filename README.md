@@ -198,7 +198,7 @@ Term Memory (LSTM), and since it's a simpler version, it is also a faster one.</
 <h3>Support Vector Machine: SVM</h3>
 <br>
 <figure class="center">
-  <img src="Pictures/SVM.png" alt="SVM" >
+  <img src="Pictures/SVM.PNG" alt="SVM" >
   <figcaption>Support Vector Machine </figcaption>
 </figure>
 <br>
@@ -212,7 +212,7 @@ For the experiments that we performed with SVM, we noticed that if we take too m
 <h3>Random Forest Classifier</h3>
 <br>
 <figure class="center">
-  <img src="Pictures/RFClassifier.png" alt="RFC" >
+  <img src="Pictures/RFClassifier.PNG" alt="RFC" >
   <figcaption>Random Forest Classifier </figcaption>
 </figure>
 <br>
@@ -223,7 +223,7 @@ data, taking the average of them all to improve the accuracy.</p>
 <h3>Convolutional Neural Network: CNN</h3>
 <br>
 <figure class="center">
-  <img src="Pictures/CNN.png" alt="CNN" >
+  <img src="Pictures/CNN.PNG" alt="CNN" >
   <figcaption>Convolutional Neural Network</figcaption>
 </figure>
 
