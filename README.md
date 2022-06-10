@@ -68,11 +68,11 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
     </li>
     <li>
     <a href= "https://ieeexplore.ieee.org/document/7104132"> 
-                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks
+                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks</a>
     </li>
     <li>
     <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> 
-                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG
+                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG</a>
     </li>
 </ul>
 
@@ -93,7 +93,7 @@ Sentiment Classification with an EEG-based Brain-machine Interface":
 
 <figure class="center">
   <img src="Pictures/4_channels_used.png" alt="Channels used" >
-  <figcaption>Fig.1 - EEG sensors TP9, AF7, AF8 and TP10 of the Muse headband</figcaption>
+  <figcaption>EEG sensors TP9, AF7, AF8 and TP10 of the Muse headband</figcaption>
 </figure>
 <br>
 
@@ -167,19 +167,98 @@ The raw EEG data have been downsampled to a 200 Hz sampling rate in order to rem
 
  Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
 
-<br><br><br><br><br><br><br>
+<br><br>
 
 <h2>Preprocessing</h2>
 
-<br><br><br><br><br><br><br>
+<br><br>
 
 <h2>Feature Extraction</h2>
 
-<h3>Models</h3>
+<br><br>
 
+<h2>Models</h2>
 
+For the predicting models we focused on neural network models, Support Vector Machine (SVM), and 
+Random Forest Classifier.
+
+<h3>Gated Recurrent Unit: GRU</h3>
 <br>
 
+<figure class="center">
+  <img src="Pictures/GRU.png" alt="GRU" >
+  <figcaption>Gated Recurrent Unit Model </figcaption>
+</figure>
+<br>
+
+<p>Recurrent neural networks are great at "remembering" information and sequenced data,
+so they are great for this brain-wave type of data. GRU is a simpler version of a Long-Short
+Term Memory (LSTM), and since it's a simpler version, it is also a faster one.</p>
+
+<h3>Support Vector Machine: SVM</h3>
+<br>
+<figure class="center">
+  <img src="Pictures/SVM.png" alt="SVM" >
+  <figcaption>Support Vector Machine </figcaption>
+</figure>
+<br>
+
+<p>Support Vector Machines are also a good machine learning algorithms when it comes to research with brain waves.
+This method helps in classifying by finding a hyperplane that separates the classes with the maximum margin between them.
+
+For the experiments that we performed with SVM, we noticed that if we take too much data, SVM takes too much time to perform. With this subset of data we can infer what would be the total result of the
+#SVM algorithm if we had more computational power to work with.
+
+<h3>Random Forest Classifier</h3>
+<br>
+<figure class="center">
+  <img src="Pictures/RFClassifier.png" alt="RFC" >
+  <figcaption>Random Forest Classifier </figcaption>
+</figure>
+<br>
+
+<p>This method fits the data on a number of decision trees (n_estimators) on different sub-samples of the
+data, taking the average of them all to improve the accuracy.</p>
+
+<h3>Convolutional Neural Network: CNN</h3>
+<br>
+<figure class="center">
+  <img src="Pictures/CNN.png" alt="CNN" >
+  <figcaption>Convolutional Neural Network</figcaption>
+</figure>
+
+<p>
+This last method is usually used for image classification. Those for image classification are usually.
+for 3 dimensional data (using Conv2D). Nonetheless, 1-Dimensional Convolutional
+Neural Networks are also used for time sequenced data, which is exactly what we got with these statistical
+values and FFTs from each of the 4 channels selected.
+</p>
+
+<br><br>
+
 <h2>Results</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
