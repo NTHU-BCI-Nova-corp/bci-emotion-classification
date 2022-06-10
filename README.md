@@ -56,7 +56,7 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
                 Paper: Mental Emotional Sentiment Classification with an EEG-based Brain-machine Interface</a>
     </li>
 </ul>
-<p> SEED-IV Dataset Paper based on this dataset:</p>
+<p> Dataset Paper based on SEED-IV's dataset:</p>
 <ul>
     <li>
     <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> 
