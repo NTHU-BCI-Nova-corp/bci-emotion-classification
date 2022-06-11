@@ -23,6 +23,8 @@
 
 <p> <strong>Authors:</strong> Ernesto/吳心潼 (110062428), Alejandro Cortes/歌泰茲 (110065429) , Novo/永哲睿 (109003888)</p>
 
+<p> To watch Video please click this link and download: https://drive.google.com/file/d/1ISWIGZGtEUh3yBj5xVbf8B30Wlw2lZ5M/view?usp=sharing </p>
+
 <h2>Introduction</h2>
 
 In this project we replicated the data preprocessing of 3 emotional states (concentrated, relaxed, and neutral states)
