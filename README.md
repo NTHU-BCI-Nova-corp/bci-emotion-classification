@@ -56,8 +56,6 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
                 Paper: Mental Emotional Sentiment Classification with an EEG-based Brain-machine Interface</a>
     </li>
 </ul>
-<p> Dataset Paper based on SEED-IV's dataset:</p>
-
 
 
 <h2>Dataset</h2>
@@ -230,6 +228,8 @@ values and FFTs from each of the 4 channels selected.
 <h2>
 
 <h3>Seed IV Dataset</h3>
+    
+<p> Dataset Paper based on SEED-IV's dataset:</p>
     
 <ul>
     <li>
