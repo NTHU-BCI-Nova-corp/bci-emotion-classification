@@ -41,7 +41,7 @@ plus FFT windows based on 4 channels with the commercial Muse EEG headband. We a
 <p> Dataset and Papers based on Jordan's dataset:</p>
 <ul>
     <li>
-    <a href="https://github.com/jordan-bird/eeg-feature-generation">Jordan-bird/eeg-feature-generation</a>
+    <a href="https://github.com/jordan-bird/eeg-feature-generation/tree/master/dataset/original_data">DATASET: Jordan-bird/eeg-feature-generation</a>
     </li>
     <li>
     <a href= "https://ieeexplore.ieee.org/abstract/document/8710576"> 
@@ -93,7 +93,7 @@ Mental State Classification using EEG-based Brain-Machine Interface":
   <img src="Pictures/4_channels_used.png" alt="Channels used" >
   <figcaption>EEG sensors TP9, AF7, AF8 and TP10 of the Muse headband</figcaption>
 </figure>
-<br><br>
+<hr>
 
 For the data collection process, they utilized the commercially available MUSE band, which has 5 electrodes (1 being the
 reference, NZ).
@@ -131,6 +131,29 @@ at 0.5Hz.
 <img alt="img_2.png" src="Pictures/pipeline.png" width="100%"/>
 
 <hr>
+<h2>How to use</h2>
+<p>
+1. Go to file "bci-emotion-classification/eeg-feature-extractor/code/EEG_generate_training_matrix.py"
+and run to generate the needed matrix with all the features. This creates a file named "final_data.csv"
+in the folder "bci-emotion-classification/eeg-feature-extractor/dataset/generated_data/".
+</p>
+<p>
+2. With the newly created features in the file "final_data.csv", go to "bci-emotion-classification/eeg-prediction/EEG_Emotion_Recognition_BCI.ipynb",
+and run that file. This will run the 4 models.
+</p>
+<p>
+3. Extra: If you want to run the models with just FFTs and not with the whole set of features, then on "EEG_Emotion_Recognition_BCI.ipynb" comment the first set of 
+train_test_split, and uncomment the second set, which uses the "x_freq" variable:
+</p>
+<figure class="center">
+  <img src="Pictures/train_test_selection.PNG" alt="comment/uncomment desired inputs" >
+  <figcaption>Select desired x inputs.</figcaption>
+</figure>
+
+
+<hr>
+
+
 <h2>Preprocessing & Feature Extraction</h2>
 
 [//]: # (#1-Sliding window)
@@ -440,6 +463,9 @@ performed the analysis on both the FFTs and Statistical Features.</p>
 <p>The following tables present scores for Precision, Recall, and F1-Score metrics for each
 type of model. These metrics and the accuracy graph presented below are a good indicator
 of all good the model performs.</p>
+
+<p>It is also important to notice the following labels to understand
+the confusion matrices: <b>(0:"Relaxed", 1:"Neutral", 2:"Concentrating")</b></p>
 
 <table>
 <tr>
