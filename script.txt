@@ -1,0 +1,30 @@
+Greetings...we are.... 
+
+Initial. Our proyect consisted on replicating a statistical feature extraction method proposed by Jordan J. Bird, to accurately predict 3 mental states.
+
+et's look at the overview of our project.
+
+1. Mental Tasks: This included 3 mental states. The first one was a neutral state in which the participant received no stimuli. Second one, is a relaxed state in which
+the participants listen to calm music and try to relax themselves and their muscles and movements. The third and final one is where the participants concentrated 
+themselves and follow a ball hidden in 1 of 3 cups. All states were recorded for 60 s.
+
+2-3. The EEG recording includes 4 channels with a initial sampling rate of 250 Hz with the Muse Headband. 
+
+4. The signals will be sliced into 1 s windows, to be able to extract relevant information from them. It was splitted into a half of window, and a quarter of a window,
+which will be to calculate statistical features.
+
+5-6. Since emotions are encoded within chemical composition that directly influence brain wave,
+they can be classified using statistical features of the produced brainwaves. Some of these statistical features include "........". At the same time, we can also used FFT signals obtain from the signal window slicing,
+to predict the mental states. We will combine all of these features to create a Feature Matrix.
+
+Showing Feature Extraction Code.
+
+7-8. With the created feature matrices, we can use them to predict a testing set, with the following models ".....".
+
+Showing models.
+
+9. We made a comparison of the models, talky talky...
+
+
+Show references.
+
