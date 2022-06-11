@@ -20,3 +20,4 @@ eeg-feature-extractor/dataset/test/10sec.csv
 eeg-feature-extractor/dataset/test/1sec.csv
 eeg-feature-extractor/dataset/test/1sec_2.csv
 eeg-feature-extractor/dataset/generated_data_alex/final_data.csv
+eeg-feature-extractor/dataset/generated_data/final_data.csv
