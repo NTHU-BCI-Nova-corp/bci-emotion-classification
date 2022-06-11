@@ -97,8 +97,18 @@ Sentiment Classification with an EEG-based Brain-machine Interface":
 </figure>
 <br><br>
 
-DATASET DESCRIPTION................
-EDIT THIS PART FROM THE PAPER: "A Study on Mental State Classification using EEG-based Brain-Machine Interface"
+For the data collection process, they utilized the commercially available MUSE band, which has 5 electrodes (1 being the reference, NZ).
+They made 3 types of stimuli corresponding for 3 types of mental states (relaxed, neutral, concentrated). For the relaxed stimuli,
+they made the participants hear calming sounds and music, and to try to relax their muscles and general being. In the neutral state, no stimulus
+of music was provided. Finally, in the concentrated state, they ask the participants to follow a ball that was under one cup, as that cup
+was being shuffled among other 2 cups.
+
+They made this experiments with 4 subjects, with each subject being tested twice on each mental state. For each experiment, the MUSE headband 
+started recording after a while to be sure that the subject was in that mental state, and recorded for approximately 60 seconds, with a sampling rate
+of an interval of 150-270 Hz. Since they applied a universal timestamp to each data point, it was possible to down sampled the data into a sampling rate
+of 250 Hz. With this procedure they ended up with 24 different trials (3 mental states x 4 subjects x 2 tries per mental state), which translates to about
+360,000 data points per channel (60 seconds x 250 Hz x 24 trials). For the total amount of data points taking in consideration the 4 channels this amounts to
+1,440,000 data points (350,000 x 4 channels), which is quite a good amount, and another reason why we chose to work on this dataset and paper.
 
 Before doing any feature extraction method, they down sampled the data to 150 Hz. After that they
 rely on getting statistical features from the EEG data, FFT, max-min features in
