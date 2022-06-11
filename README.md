@@ -95,7 +95,7 @@ Sentiment Classification with an EEG-based Brain-machine Interface":
   <img src="Pictures/4_channels_used.png" alt="Channels used" >
   <figcaption>EEG sensors TP9, AF7, AF8 and TP10 of the Muse headband</figcaption>
 </figure>
-<br>
+<br><br>
 
 The data was collected from 2 individuals, one male and one female. They watched 6 films
 for 60 seconds each, for each of the 3 different mental states, producing 18 minutes of data
@@ -201,7 +201,7 @@ Term Memory (LSTM), and since it's a simpler version, it is also a faster one.</
   <img src="Pictures/SVM.PNG" alt="SVM" >
   <figcaption>Support Vector Machine </figcaption>
 </figure>
-<br>
+<br><br>
 
 <p>Support Vector Machines are also a good machine learning algorithms when it comes to research with brain waves.
 This method helps in classifying by finding a hyperplane that separates the classes with the maximum margin between them.
@@ -215,7 +215,7 @@ For the experiments that we performed with SVM, we noticed that if we take too m
   <img src="Pictures/RFClassifier.PNG" alt="RFC" >
   <figcaption>Random Forest Classifier </figcaption>
 </figure>
-<br>
+<br><br>
 
 <p>This method fits the data on a number of decision trees (n_estimators) on different sub-samples of the
 data, taking the average of them all to improve the accuracy.</p>
@@ -226,7 +226,7 @@ data, taking the average of them all to improve the accuracy.</p>
   <img src="Pictures/CNN.PNG" alt="CNN" >
   <figcaption>Convolutional Neural Network</figcaption>
 </figure>
-
+<br><br>
 <p>
 This last method is usually used for image classification. Those for image classification are usually.
 for 3 dimensional data (using Conv2D). Nonetheless, 1-Dimensional Convolutional
@@ -237,6 +237,39 @@ values and FFTs from each of the 4 channels selected.
 <br><br>
 
 <h2>Results</h2>
+<br>
+
+<h3>GRU Results</h3>
+<br>
+
+<figure class="center">
+  <img src="Pictures/gru_results.PNG">
+</figure>
+<br>
+
+<h3>SVM Results</h3>
+<br>
+
+<figure class="center">
+  <img src="Pictures/svm_results.PNG">
+</figure>
+<br>
+
+<h3>RFC Results</h3>
+<br>
+
+<figure class="center">
+  <img src="Pictures/rfc_results.PNG">
+</figure>
+<br>
+
+<h3>CNN Results</h3>
+<br>
+
+<figure class="center">
+  <img src="Pictures/cnn_results.PNG">
+</figure>
+<br>
 
 
 
