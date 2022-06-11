@@ -96,25 +96,6 @@ temporal sequences, among others, in time windows to extract the best informatio
 from the EEG data. The sliding window was set to 1s, and all the statistical features
 are computed in this timeframe. Then some overlap for each next window was performed
 at 0.5Hz. 
-
-<h4>Features Used:</h4>
-
-<ul>
-    <li>
-        Statistical Features:
-    </li>
-    <li>
-        Max, Min, Derivatives:
-    </li>
-    <li>
-        Frequency Domain:
-    </li>
-    <li>
-        Frequency Domain:
-    </li>
-
-</ul>
-
 <br>
 
 
