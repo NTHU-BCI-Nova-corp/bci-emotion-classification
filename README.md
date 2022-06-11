@@ -87,8 +87,7 @@ They used the commercially available Muse headband, to focus on 4 EEG Sensors: (
 channels were selected because past research
 states that they are the good indicators of this mental activity, and also because of the easier availability for the
 general public to get hold of one of these
-devices. They have gathered the data and method from several experiments, but the latest one is from "Mental Emotional
-Sentiment Classification with an EEG-based Brain-machine Interface":
+devices. They have gathered the data and features from several experiments, but the latest one is from "A Study on Mental State Classification using EEG-based Brain-Machine Interface":
 
 
 <figure class="center">
@@ -137,44 +136,6 @@ at 0.5Hz.
 
 <br>
 
-<h3>Seed IV Dataset</h3>
-
-<h4>Data Acquisition</h4>
-
-The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study. These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the sessions is 24 trials.  
-
-<h4>Feature Extraction</h4>
-
-The signal is sliced into 4-second nonoverlapping segments
-
-<h4>EEG Features</h4>
-
-The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density (PSD) and differential entropy (DE) to eaxtract each segment at 5 frequency bands (delta, theta, alpha, beta, and gamma). The data also provide smoothing technique between linear dynamic system (LDS) and moving averages
-
-<ul>
-    <li>
-        Bandpass Filter
-    </li>
-    <li>
-        Power Spectral Density
-    </li>
-    <li>
-        Differential Entropy
-    </li>
-    <li>
-        Linear Dynamic Sysstem
-    </li>
-    <li>
-        Moving Averages
-    </li>
-
-</ul>
-
-<h4>Eye Movement Features</h4>
-
- Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
-
-<br><br>
 
 <h2>Preprocessing</h2>
 
@@ -283,9 +244,83 @@ values and FFTs from each of the 4 channels selected.
 
 
 
+<h2>
 
+<h3>Seed IV Dataset</h3>
 
+<h4>Data Acquisition</h4>
 
+The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study. These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the sessions is 24 trials.  
+
+<h4>Feature Extraction</h4>
+
+The signal is sliced into 4-second nonoverlapping segments
+
+<h4>EEG Features</h4>
+
+The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density (PSD) and differential entropy (DE) to eaxtract each segment at 5 frequency bands (delta, theta, alpha, beta, and gamma). The data also provide smoothing technique between linear dynamic system (LDS) and moving averages
+
+<ul>
+    <li>
+        Bandpass Filter
+    </li>
+    <li>
+        Power Spectral Density
+    </li>
+    <li>
+        Differential Entropy
+    </li>
+    <li>
+        Linear Dynamic Sysstem
+    </li>
+    <li>
+        Moving Averages
+    </li>
+
+</ul>
+
+<h4>Eye Movement Features</h4>
+
+ Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
+
+<br><br>
+
+<h4>Data Acquisition</h4>
+
+The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study. These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the sessions is 24 trials.  
+
+<h4>Feature Extraction</h4>
+
+The signal is sliced into 4-second nonoverlapping segments
+
+<h4>EEG Features</h4>
+
+The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density (PSD) and differential entropy (DE) to eaxtract each segment at 5 frequency bands (delta, theta, alpha, beta, and gamma). The data also provide smoothing technique between linear dynamic system (LDS) and moving averages
+
+<ul>
+    <li>
+        Bandpass Filter
+    </li>
+    <li>
+        Power Spectral Density
+    </li>
+    <li>
+        Differential Entropy
+    </li>
+    <li>
+        Linear Dynamic Sysstem
+    </li>
+    <li>
+        Moving Averages
+    </li>
+
+</ul>
+
+<h4>Eye Movement Features</h4>
+
+ Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
+
+<br><br>
 
 
 
