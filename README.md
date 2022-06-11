@@ -21,7 +21,7 @@
 
 <h1>BCI - Emotion - Classification </h1>
 
-<p> <strong>Authors:</strong> Ernesto, Alex, Novo</p>
+<p> <strong>Authors:</strong> Ernesto/吳心潼 (110062428), Alejandro Cortes/歌泰茲 (110065429) , Novo/永哲睿 (109003888)</p>
 
 <h2>Introduction</h2>
 
