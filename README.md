@@ -176,8 +176,7 @@ for 3 dimensional data (using Conv2D). Nonetheless, 1-Dimensional Convolutional
 Neural Networks are also used for time sequenced data, which is exactly what we got with these statistical
 values and FFTs from each of the 4 channels selected.
 </p>
-
-<br><br>
+<hr>
 
 <h2>Results</h2>
 
@@ -283,7 +282,20 @@ of all good the model performs.</p>
   <img src="Pictures/comparison.PNG" alt="">
 </figure>
 
+<p>In the figure above, we can see that when we just use the FFTs from each channel to try to predict
+the mental states from the data, we achieve good results. But then, after taking in consideration
+the statistical features, the 4 models performed a bit better, proving that these features all carry
+good information about brain wave data and their corresponding mental state.</p>
 
+<h3>Best Model</h3>
+<p>
+All models performed pretty good, but the two best models with best accuracies when considering all features
+are Random Forest Classifier and Convolution Neural Network both with 97% accuracy. When considering other metrics
+such as Precision, Recall, and F1-Score, again these two models where the best (outperforming GRU by just
+0.01%) each with a macro average F1-Score of 97%.
+
+Although SVM had good accuracy and other metrics, it still was the worst performing among all 4 methods.
+</p>
 
 
 
