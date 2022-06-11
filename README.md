@@ -105,7 +105,7 @@ of music was provided. Finally, in the concentrated state, they ask the particip
 cup, as that cup
 was being shuffled among other 2 cups.
 
-They made this experiments with 4 subjects, with each subject being tested twice on each mental state. For each
+They made these experiments with 4 subjects, with each subject being tested twice on each mental state. For each
 experiment, the MUSE headband
 started recording after a while to be sure that the subject was in that mental state, and recorded for approximately 60
 seconds, with a sampling rate
