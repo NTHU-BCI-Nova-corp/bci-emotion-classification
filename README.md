@@ -67,7 +67,7 @@ neutral, and concentrating states.
 They used the commercially available Muse headband, to focus on 4 EEG Sensors: (TP9, AF7, AF8, and TP10). Theses 4
 channels were selected because past research
 states that they are the good indicators of this mental activity, and also because of the easier availability for the
-general public to get hold of one of these
+public to get hold of one of these
 devices. They have gathered the data and features from several experiments, but the latest one is from "A Study on
 Mental State Classification using EEG-based Brain-Machine Interface":
 
@@ -171,7 +171,7 @@ data, taking the average of them all to improve the accuracy.</p>
 </figure>
 <br><br>
 <p>
-This last method is usually used for image classification. Those for image classification are usually.
+This last method is usually used for image classification. Those for image classification are used
 for 3 dimensional data (using Conv2D). Nonetheless, 1-Dimensional Convolutional
 Neural Networks are also used for time sequenced data, which is exactly what we got with these statistical
 values and FFTs from each of the 4 channels selected.
@@ -200,12 +200,12 @@ of all good the model performs.</p>
 <tr>
     <td>
         <figure class="center">
-          <img src="Pictures/gru_results_ffts.PNG">
+          <img src="Pictures/gru_results_ffts.PNG" alt="">
         </figure>
     </td>
     <td>
-        <figure class="center">
-          <img src="Pictures/svm_results_ffts.PNG">
+        <figure class="center" >
+          <img src="Pictures/svm_results_ffts.PNG" alt="">
         </figure>
     </td>
 </tr>
@@ -216,12 +216,12 @@ of all good the model performs.</p>
 <tr>
     <td>
         <figure class="center">
-          <img src="Pictures/rfc_results_ffts.PNG">
+          <img src="Pictures/rfc_results_ffts.PNG" alt="">
         </figure>
     </td>
     <td>
         <figure class="center">
-          <img src="Pictures/cnn_results_ffts.PNG">
+          <img src="Pictures/cnn_results_ffts.PNG" alt="">
         </figure>
     </td>
 </tr>
@@ -229,7 +229,7 @@ of all good the model performs.</p>
 <hr>
 <p>This is the overall accuracies of the models when performing the predictions on only the FFTs features:</p>
 <figure class="center">
-  <img src="Pictures/accuracies_ffts.PNG">
+  <img src="Pictures/accuracies_ffts.PNG" alt="">
 </figure>
 
 <h3>Results with Statistical Features + FFTs</h3>
@@ -244,12 +244,12 @@ of all good the model performs.</p>
 <tr>
     <td>
         <figure class="center">
-          <img src="Pictures/gru_results.PNG">
+          <img src="Pictures/gru_results.PNG" alt="">
         </figure>
     </td>
     <td>
         <figure class="center">
-          <img src="Pictures/svm_results.PNG">
+          <img src="Pictures/svm_results.PNG" alt="">
         </figure>
     </td>
 </tr>
@@ -260,12 +260,12 @@ of all good the model performs.</p>
 <tr>
     <td>
         <figure class="center">
-          <img src="Pictures/rfc_results.PNG">
+          <img src="Pictures/rfc_results.PNG" alt="">
         </figure>
     </td>
     <td>
         <figure class="center">
-          <img src="Pictures/cnn_results.PNG">
+          <img src="Pictures/cnn_results.PNG" alt="">
         </figure>
     </td>
 </tr>
@@ -273,122 +273,217 @@ of all good the model performs.</p>
 <hr>
 <p>This is the overall accuracies of the models when performing the predictions on all the features (statistical features and FFTs):</p>
 <figure class="center">
-  <img src="Pictures/accuracies_allfeatures.PNG">
+  <img src="Pictures/accuracies_allfeatures.PNG" alt="">
+</figure>
+
+<h2>Conclusions</h2>
+<h3>Comparison between Features</h3>
+
+<figure class="center">
+  <img src="Pictures/comparison.PNG" alt="">
 </figure>
 
 
 
 
-<h2>EXTRA SECTION: SEED-IV Dataset </h2>
 
-<h3>Seed IV Dataset</h3>
 
-<p> Dataset Paper based on SEED-IV's dataset:</p>
 
-<ul>
-    <li>
-    <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> 
-                DataSet: SEED-IV</a>
-    </li>
-    <li>
-    <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> 
-                Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>
-    </li>
-    <li>
-    <a href= "https://ieeexplore.ieee.org/document/7104132"> 
-                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks</a>
-    </li>
-    <li>
-    <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> 
-                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG</a>
-    </li>
-</ul>
 
-<h4>Data Acquisition</h4>
+[//]: # ()
+[//]: # (<h2>EXTRA SECTION: SEED-IV Dataset </h2>)
 
-The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study.
-These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel
-ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the
-sessions is 24 trials.
+[//]: # ()
+[//]: # (<h3>Seed IV Dataset</h3>)
 
-<h4>Feature Extraction</h4>
+[//]: # ()
+[//]: # (<p> Dataset Paper based on SEED-IV's dataset:</p>)
 
-The signal is sliced into 4-second nonoverlapping segments
+[//]: # ()
+[//]: # (<ul>)
 
-<h4>EEG Features</h4>
+[//]: # (    <li>)
 
-The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then
-using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density (PSD) and differential entropy (DE) to
-eaxtract each segment at 5 frequency bands (delta, theta, alpha, beta, and gamma). The data also provide smoothing
-technique between linear dynamic system (LDS) and moving averages
+[//]: # (    <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> )
 
-<ul>
-    <li>
-        Bandpass Filter
-    </li>
-    <li>
-        Power Spectral Density
-    </li>
-    <li>
-        Differential Entropy
-    </li>
-    <li>
-        Linear Dynamic Sysstem
-    </li>
-    <li>
-        Moving Averages
-    </li>
+[//]: # (                DataSet: SEED-IV</a>)
 
-</ul>
+[//]: # (    </li>)
 
-<h4>Eye Movement Features</h4>
+[//]: # (    <li>)
 
-Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
+[//]: # (    <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> )
 
-<br><br>
+[//]: # (                Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>)
 
-<h4>Data Acquisition</h4>
+[//]: # (    </li>)
 
-The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study.
-These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel
-ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the
-sessions is 24 trials.
+[//]: # (    <li>)
 
-<h4>Feature Extraction</h4>
+[//]: # (    <a href= "https://ieeexplore.ieee.org/document/7104132"> )
 
-The signal is sliced into 4-second nonoverlapping segments
+[//]: # (                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks</a>)
 
-<h4>EEG Features</h4>
+[//]: # (    </li>)
 
-The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then
-using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density (PSD) and differential entropy (DE) to
-eaxtract each segment at 5 frequency bands (delta, theta, alpha, beta, and gamma). The data also provide smoothing
-technique between linear dynamic system (LDS) and moving averages
+[//]: # (    <li>)
 
-<ul>
-    <li>
-        Bandpass Filter
-    </li>
-    <li>
-        Power Spectral Density
-    </li>
-    <li>
-        Differential Entropy
-    </li>
-    <li>
-        Linear Dynamic System
-    </li>
-    <li>
-        Moving Averages
-    </li>
+[//]: # (    <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> )
 
-</ul>
+[//]: # (                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG</a>)
 
-<h4>Eye Movement Features</h4>
+[//]: # (    </li>)
 
-Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics
+[//]: # (</ul>)
 
-<br><br>
+[//]: # ()
+[//]: # (<h4>Data Acquisition</h4>)
+
+[//]: # ()
+[//]: # (The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study.)
+
+[//]: # (These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel)
+
+[//]: # (ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the)
+
+[//]: # (sessions is 24 trials.)
+
+[//]: # ()
+[//]: # (<h4>Feature Extraction</h4>)
+
+[//]: # ()
+[//]: # (The signal is sliced into 4-second nonoverlapping segments)
+
+[//]: # ()
+[//]: # (<h4>EEG Features</h4>)
+
+[//]: # ()
+[//]: # (The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then)
+
+[//]: # (using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density &#40;PSD&#41; and differential entropy &#40;DE&#41; to)
+
+[//]: # (eaxtract each segment at 5 frequency bands &#40;delta, theta, alpha, beta, and gamma&#41;. The data also provide smoothing)
+
+[//]: # (technique between linear dynamic system &#40;LDS&#41; and moving averages)
+
+[//]: # ()
+[//]: # (<ul>)
+
+[//]: # (    <li>)
+
+[//]: # (        Bandpass Filter)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Power Spectral Density)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Differential Entropy)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Linear Dynamic Sysstem)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Moving Averages)
+
+[//]: # (    </li>)
+
+[//]: # ()
+[//]: # (</ul>)
+
+[//]: # ()
+[//]: # (<h4>Eye Movement Features</h4>)
+
+[//]: # ()
+[//]: # (Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics)
+
+[//]: # ()
+[//]: # (<br><br>)
+
+[//]: # ()
+[//]: # (<h4>Data Acquisition</h4>)
+
+[//]: # ()
+[//]: # (The data collected from 15 participants watching 72 film clips that were maticulately chossen by a preliminary study.)
+
+[//]: # (These clips have the tendency to introduce happiness, sadness, fear or neutral emotions. The reearcher use 62-channel)
+
+[//]: # (ESI NueroScan Sytem and SMI eye-tracking glasses. For each subject, there are 3 sessions on different days. Each of the)
+
+[//]: # (sessions is 24 trials.)
+
+[//]: # ()
+[//]: # (<h4>Feature Extraction</h4>)
+
+[//]: # ()
+[//]: # (The signal is sliced into 4-second nonoverlapping segments)
+
+[//]: # ()
+[//]: # (<h4>EEG Features</h4>)
+
+[//]: # ()
+[//]: # (The raw EEG data have been downsampled to a 200 Hz sampling rate in order to remove the noise and the artifacts. Then)
+
+[//]: # (using bandpass filter betweeen 1 Hz - 5 Hz. By using power spectral density &#40;PSD&#41; and differential entropy &#40;DE&#41; to)
+
+[//]: # (eaxtract each segment at 5 frequency bands &#40;delta, theta, alpha, beta, and gamma&#41;. The data also provide smoothing)
+
+[//]: # (technique between linear dynamic system &#40;LDS&#41; and moving averages)
+
+[//]: # ()
+[//]: # (<ul>)
+
+[//]: # (    <li>)
+
+[//]: # (        Bandpass Filter)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Power Spectral Density)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Differential Entropy)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Linear Dynamic System)
+
+[//]: # (    </li>)
+
+[//]: # (    <li>)
+
+[//]: # (        Moving Averages)
+
+[//]: # (    </li>)
+
+[//]: # ()
+[//]: # (</ul>)
+
+[//]: # ()
+[//]: # (<h4>Eye Movement Features</h4>)
+
+[//]: # ()
+[//]: # (Using various of parameters to extract namely: pupil diameter, dispersion, fixation duration, saccade, event statistics)
+
+[//]: # ()
 
 
 
