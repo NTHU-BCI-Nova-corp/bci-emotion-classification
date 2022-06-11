@@ -124,6 +124,11 @@ temporal sequences, among others, in time windows to extract the best informatio
 from the EEG data. The sliding window was set to 1s, and all the statistical features
 are computed in this timeframe. Then some overlap for each next window was performed
 at 0.5Hz.
+<hr>
+
+<h2>Overview</h2>
+
+<img alt="img_2.png" src="Pictures/pipeline.png" width="100%"/>
 
 <hr>
 <h2>Preprocessing & Feature Extraction</h2>
@@ -309,22 +314,25 @@ those subsections' entropies and be calculated by the log-energy entropy
 
 </td>
 <tr>
-<td rowspan="6">Steps</td>
+<td rowspan="7">Steps</td>
 </tr>
 <tr>
-<td>1) Remove DC component</td>
+<td>1) Resampling rate from 250 Hz to 150 Hz</td>
 </tr>
 <tr>
-<td>2) Shut up the main power supply frequency 50 hz</td>
+<td>2) Remove DC component</td>
 </tr>
 <tr>
-<td>3) Normalized signal to the before interval [-1, 1]</td>
+<td>3) Shut up the main power supply frequency 50 hz</td>
 </tr>
 <tr>
-<td>4) Select top 10 of the most energetic frequency</td>
+<td>4) Normalized signal to the before interval [-1, 1]</td>
 </tr>
 <tr>
-<td>5) Computed power spectrum (magnitude of each frequency component)</td>
+<td>5) Select top 10 of the most energetic frequency</td>
+</tr>
+<tr>
+<td>6) Computed power spectrum (magnitude of each frequency component)</td>
 </tr>
 </table>
 
