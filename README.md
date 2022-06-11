@@ -179,7 +179,18 @@ values and FFTs from each of the 4 channels selected.
 
 <h2>Results</h2>
 
-<br>
+
+
+
+
+
+
+
+<h3>Statistical Features + FFTs</h3>
+<hr>
+<p>The following tables present scores for Precision, Recall, and F1-Score metrics for each
+type of model. These metrics and the accuracy graph presented below are a good indicator
+of all good the model performs.</p>
 <table>
 <tr>
     <th><h3>GRU Results</h3></th>
@@ -215,6 +226,11 @@ values and FFTs from each of the 4 channels selected.
     </td>
 </tr>
 </table>
+<hr>
+<p>This is the overall accuracies of the models when performing the predictions on all the features (statistical features and FFTs):</p>
+<figure class="center">
+  <img src="Pictures/accuracies_allfeatures.PNG">
+</figure>
 
 
 
