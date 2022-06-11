@@ -57,24 +57,7 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
     </li>
 </ul>
 <p> Dataset Paper based on SEED-IV's dataset:</p>
-<ul>
-    <li>
-    <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> 
-                DataSet: SEED-IV</a>
-    </li>
-    <li>
-    <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> 
-                Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>
-    </li>
-    <li>
-    <a href= "https://ieeexplore.ieee.org/document/7104132"> 
-                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks</a>
-    </li>
-    <li>
-    <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> 
-                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG</a>
-    </li>
-</ul>
+
 
 
 <h2>Dataset</h2>
@@ -247,6 +230,25 @@ values and FFTs from each of the 4 channels selected.
 <h2>
 
 <h3>Seed IV Dataset</h3>
+    
+<ul>
+    <li>
+    <a href= "https://bcmi.sjtu.edu.cn/~seed/seed-iv.html"> 
+                DataSet: SEED-IV</a>
+    </li>
+    <li>
+    <a href= "https://ieeexplore.ieee.org/abstract/document/8283814"> 
+                Paper: EmotionMeter: A Multimodal Framework for Recognizing Human Emotions</a>
+    </li>
+    <li>
+    <a href= "https://ieeexplore.ieee.org/document/7104132"> 
+                Paper: Investigating Critical Frequency Bands andChannels for EEG-based Emotion Recognition with Deep Neural Networks</a>
+    </li>
+    <li>
+    <a href= "https://pubmed.ncbi.nlm.nih.gov/28102833"> 
+                Paper: A Multimodal Approach to Estimating Vigilance Using EEG and Forehead EOG</a>
+    </li>
+</ul>
 
 <h4>Data Acquisition</h4>
 
