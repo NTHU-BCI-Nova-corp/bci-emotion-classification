@@ -41,7 +41,7 @@ plus FFT windows based on 4 channels with the commercial Muse EEG headband. We a
 <p> Dataset and Papers based on Jordan's dataset:</p>
 <ul>
     <li>
-    <a href="https://github.com/jordan-bird/eeg-feature-generation/dataset/original_data/">DATASET: Jordan-bird/eeg-feature-generation</a>
+    <a href="https://github.com/jordan-bird/eeg-feature-generation/tree/master/dataset/original_data">DATASET: Jordan-bird/eeg-feature-generation</a>
     </li>
     <li>
     <a href= "https://ieeexplore.ieee.org/abstract/document/8710576"> 
