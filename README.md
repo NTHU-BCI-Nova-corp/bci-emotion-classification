@@ -93,7 +93,7 @@ Mental State Classification using EEG-based Brain-Machine Interface":
   <img src="Pictures/4_channels_used.png" alt="Channels used" >
   <figcaption>EEG sensors TP9, AF7, AF8 and TP10 of the Muse headband</figcaption>
 </figure>
-<br><br>
+<hr>
 
 For the data collection process, they utilized the commercially available MUSE band, which has 5 electrodes (1 being the
 reference, NZ).
@@ -127,10 +127,28 @@ at 0.5Hz.
 
 <hr>
 <h2>How to use</h2>
-1. Go to file bci-emotion-classification/eeg-feature-extractor/code/EEG_generate_training_matrix.py
-and run to generate the needed matrix with all the features.
+<p>
+1. Go to file "bci-emotion-classification/eeg-feature-extractor/code/EEG_generate_training_matrix.py"
+and run to generate the needed matrix with all the features. This creates a file named "final_data.csv"
+in the folder "bci-emotion-classification/eeg-feature-extractor/dataset/generated_data/".
+</p>
+<p>
+2. With the newly created features in the file "final_data.csv", go to "bci-emotion-classification/eeg-prediction/EEG_Emotion_Recognition_BCI.ipynb",
+and run that file. This will run the 4 models.
+</p>
+<p>
+3. Extra: If you want to run the models with just FFTs and not with the whole set of features, then on "EEG_Emotion_Recognition_BCI.ipynb" comment the first set of 
+train_test_split, and uncomment the second set, which uses the "x_freq" variable:
+</p>
+<figure class="center">
+  <img src="Pictures/train_test_selection.PNG" alt="comment/uncomment desired inputs" >
+  <figcaption>Select desired x inputs.</figcaption>
+</figure>
+
 
 <hr>
+
+
 <h2>Preprocessing & Feature Extraction</h2>
 
 [//]: # (#1-Sliding window)
