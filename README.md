@@ -126,6 +126,11 @@ are computed in this timeframe. Then some overlap for each next window was perfo
 at 0.5Hz.
 
 <hr>
+<h2>How to use</h2>
+1. Go to file bci-emotion-classification/eeg-feature-extractor/code/EEG_generate_training_matrix.py
+and run to generate the needed matrix with all the features.
+
+<hr>
 <h2>Preprocessing & Feature Extraction</h2>
 
 [//]: # (#1-Sliding window)

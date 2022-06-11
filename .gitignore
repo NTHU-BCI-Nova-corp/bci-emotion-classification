@@ -9,9 +9,6 @@
 /preprocessing/output/
 /eeg-feature-extractor/.idea/modules.xml
 /eeg-feature-extractor/dataset/original_data_seed/
-/eeg-feature-extractor/*/*.csv
-/eeg-feature-extractor/*/*/*.csv
-/eeg-feature-extractor/dataset/original_data/
 /eeg-prediction/.idea/
 /eeg-feature-extractor/Miniconda3-latest-MacOSX-x86_64.sh
 /eeg-prediction/input/
@@ -19,3 +16,7 @@
 /visualization/original_data_mat/
 /visualization/original_data/
 eeg-prediction/final_data.csv
+eeg-feature-extractor/dataset/test/10sec.csv
+eeg-feature-extractor/dataset/test/1sec.csv
+eeg-feature-extractor/dataset/test/1sec_2.csv
+eeg-feature-extractor/dataset/generated_data_alex/final_data.csv
