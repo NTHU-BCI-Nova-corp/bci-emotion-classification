@@ -31,10 +31,10 @@ used by Jordan et. al in "A Study on Mental State Classification using EEG-based
 demonstrate that it is possible
 to achieve a high classification accuracy using his preprocessing technique which consists in creating a defined set of
 statistical features
-plus FFT windows based on 4 channels with the commercial Muse EEG headband.
+plus FFT windows based on 4 channels with the commercial Muse EEG headband. We also compare the models when we use all these features
+(statistical and FFTs) vs only using the FFTs frequencies.
 
-Furthermore, we also download a special dataset named Seed IV, and try to replicate the findings in this new dataset.
-
+[//]: # (Furthermore, we also download a special dataset named Seed IV, and try to replicate the findings in this new dataset.)
 
 <p> Credits:</p>
 
@@ -53,9 +53,26 @@ Furthermore, we also download a special dataset named Seed IV, and try to replic
     </li>
     <li>
     <a href= "https://www.researchgate.net/publication/329403546_Mental_Emotional_Sentiment_Classification_with_an_EEG-based_Brain-machine_Interface"> 
-                Paper: Mental Emotional Sentiment Classification with an EEG-based Brain-machine Interface</a>
+                Paper: Mental Emotional Sentiment Classification with an EEG-based Brain-machine Interface.</a>
     </li>
 </ul>
+
+<h3>Dataset Justification</h3>
+
+<p>
+As mentioned before, this dataset and its features created to analyze it, all come from a main author, 
+Jordan J. Bird, and his collaborating team. This method is based on several of his papers, also mentioned before.
+The paper "A Study on Mental State Classification using EEG-based Brain-Machine Interface" has been published
+in the 2018 International Conference on Intelligent Systems (IS), being published by IEEE and having a 
+H-Index of 129
+<a href= "https://www.scimagojr.com/journalsearch.php?q=110111&tip=sid&clean=0"> 
+(Scimago Journal & Country Rank)
+</a>.
+This is quite a good index (the highest H-index being from Oxford University, with 146). H-index is a metric used to 
+measure the impact of authors based on citations and their productivity. This paper has 33 citations. In total,
+Jordan J. Bird has 53 paper publications and a total of 677 citations,  making him quite reliable.
+
+</p>
 
 
 <h2>Dataset</h2>
