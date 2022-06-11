@@ -107,15 +107,17 @@ temporal sequences, among others, in time windows to extract the best informatio
 from the EEG data. The sliding window was set to 1s, and all the statistical features
 are computed in this timeframe. Then some overlap for each next window was performed
 at 0.5Hz.
-<br>
 
-<h2>Preprocessing</h2>
+<hr>
+<h2>Preprocessing & Feature Extraction</h2>
+<h4>1: Sliding window</h4>
+<p>Windows run from [0s – 1s], [1.5s – 2.5s], [2s – 3s], [2.5s – 3s] continuing until the of the signals</p>
+<p><b>Result:</b> N windows of signals</p>
 
-<br><br>
-
-<h2>Feature Extraction</h2>
-
-<br><br>
+![img.png](Pictures/sliding-window.png)
+<h4>2: Calculate statistical 
+</h4>
+<hr>
 
 <h2>Models</h2>
 

@@ -16,3 +16,5 @@
 /eeg-feature-extractor/Miniconda3-latest-MacOSX-x86_64.sh
 /eeg-prediction/input/
 /eeg-prediction/input/eeg-brainwave-dataset-feeling-emotions/
+/visualization/original_data_mat/
+/visualization/original_data/
