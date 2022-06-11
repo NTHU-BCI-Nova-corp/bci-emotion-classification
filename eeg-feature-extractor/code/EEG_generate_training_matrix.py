@@ -105,7 +105,7 @@ if __name__ == '__main__':
 		Documentation: [fcampelo]
 """
     directory_path = "../dataset/original_data"
-    output_file = "../generated_data/final_data.csv"
+    output_file = "../dataset/generated_data/final_data.csv"
     gen_training_matrix(directory_path, output_file, cols_to_ignore=-1)
 
     if len(sys.argv) < 3:
