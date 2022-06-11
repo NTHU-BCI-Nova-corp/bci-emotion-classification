@@ -181,18 +181,60 @@ values and FFTs from each of the 4 channels selected.
 
 <h2>Results</h2>
 
+<p>For the Results section, we first analyze the results of the 4 models by performing these models
+with only FFTs frequencies as the features that will be used as inputs in the model, and then we 
+performed the analysis on both the FFTs and Statistical Features.</p>
 
-
-
-
-
-
-
-<h3>Statistical Features + FFTs</h3>
+<h3>Results with FFTs</h3>
 <hr>
 <p>The following tables present scores for Precision, Recall, and F1-Score metrics for each
 type of model. These metrics and the accuracy graph presented below are a good indicator
 of all good the model performs.</p>
+
+<table>
+<tr>
+    <th><h3>GRU Results</h3></th>
+    <th><h3>SVM Results</h3></th>
+</tr>
+
+<tr>
+    <td>
+        <figure class="center">
+          <img src="Pictures/gru_results_ffts.PNG">
+        </figure>
+    </td>
+    <td>
+        <figure class="center">
+          <img src="Pictures/svm_results_ffts.PNG">
+        </figure>
+    </td>
+</tr>
+<tr>
+    <th><h3>RFC Results</h3></th>
+    <th><h3>CNN Results</h3></th>
+</tr>
+<tr>
+    <td>
+        <figure class="center">
+          <img src="Pictures/rfc_results_ffts.PNG">
+        </figure>
+    </td>
+    <td>
+        <figure class="center">
+          <img src="Pictures/cnn_results_ffts.PNG">
+        </figure>
+    </td>
+</tr>
+</table>
+<hr>
+<p>This is the overall accuracies of the models when performing the predictions on only the FFTs features:</p>
+<figure class="center">
+  <img src="Pictures/accuracies_ffts.PNG">
+</figure>
+
+<h3>Results with Statistical Features + FFTs</h3>
+<hr>
+
 <table>
 <tr>
     <th><h3>GRU Results</h3></th>
