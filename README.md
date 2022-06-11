@@ -110,15 +110,287 @@ at 0.5Hz.
 
 <hr>
 <h2>Preprocessing & Feature Extraction</h2>
-<h4>1: Sliding window</h4>
-<p>Windows run from [0s – 1s], [1.5s – 2.5s], [2s – 3s], [2.5s – 3s] continuing until the of the signals</p>
-<p><b>Result:</b> N windows of signals</p>
+
+[//]: # (#1-Sliding window)
+<table>
+    <tr>
+        <td><b>1: Sliding window</b></td>
+    </tr>
+    <tr>
+        <td><b>Description: </b>Windows run from [0s – 1s], [1.5s – 2.5s], [2s – 3s], [2.5s – 3s] continuing until the of the signals</td>
+    </tr>
+<tr>
+<td>
 
 ![img.png](Pictures/sliding-window.png)
-<h4>2: Calculate statistical 
-</h4>
-<hr>
 
+</td>
+</tr>
+<tr><td><b>Result:</b> N windows of signals</td></tr>
+</table>
+
+[//]: # (#2-Statistical Vairable)
+<table>
+<tr>
+<td colspan="3">
+<b>2. Statistical Components</b>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<b>Description:</b> 
+Since emotions are encoded within chemical composition that directly influence electrical brain activity, they can be classed using statistical features of the produced brainwaves.
+Hence, the statistical features can be calculated from brainwave signals.
+</td>
+</tr>
+<tr>
+<td>1) Mean</td>
+<td>
+
+![mean-formula.png](Pictures/formula-mean.png)
+
+</td>
+<td>
+Each x represent sliced window, and N is the total number of the sliced window.  
+</td>
+</tr>
+<tr>
+<td>2) Standard deviation</td>
+<td>
+
+![formula-sd.png](Pictures/formula-sd.png)
+
+</td>
+<td>
+After computing <i>Mean</i> for each window, now we can find standard deviation for each window. 
+</td>
+</tr>
+
+<tr>
+<td>3) Skewness</td>
+<td>
+
+![formula-skewness.png](Pictures/formula-skewness.png)
+
+</td>
+<td rowspan="2">
+The third order(skewness) and fourth order (kurtosis) from the statistical moments 
+can help to statically represent asymmetry and peakedness of waves.
+<i>Skewness</i> and <i>kurtosis</i> are calculated at k = 3rd and k = 4th moment about the mean. 
+
+</td>
+</tr>
+
+<tr>
+<td>4) Kurtosis</td>
+<td>
+
+![formula-kurtosis.png](Pictures/formula-kurtosis.png)
+
+</td>
+</tr>
+
+<tr>
+<td>5) Max value</td>
+<td> {𝑚𝑎𝑥1,𝑚𝑎𝑥2,...,𝑚𝑎𝑥(𝑛)} </td>
+<td> Max values are calculated for each window</td>
+</tr>
+
+<tr>
+<td>6) Min value</td>
+<td>{𝑚𝑖𝑛1,𝑚𝑖𝑛2,...,𝑚𝑖𝑛(𝑛)}</td>
+<td>Min values, as well, are calculated for every window</td>
+</tr>
+
+<tr>
+<td>6) Derivatives of the min and max values</td>
+<td> 
+
+![half-window.png](Pictures/half-window.png) 
+
+</td>
+<td>Measuring derivatives of the min and max values can be calculated by dividing the window into half (denote as h1 and h2). 
+Then calculate the mix and max values from both half.</td>
+</tr>
+<tr>
+
+<td>7) Euclidean distance</td>
+<td> 
+
+![quarter-window.png](Pictures/quarter-window.png)
+
+</td>
+<td>To find the Euclidean distance for each window. Each window will
+be separated into a quarter (4 subsections denote as q1, q2, q3, and q4).
+Each subsection, put "q1" for an example, has its 1D Euclidean distance calculated across the max values of windows
+q2, q3 and q4.</td>
+</tr>
+
+<tr>
+
+<td>8) The covariance matrix</td>
+<td> 
+
+![formular-cov-m.png](Pictures/formular-cov-m.png)
+
+</td>
+<td>
+To be able to generate the statistical features, the covariance matrix needed to be computed to be an input
+for a logarithm function in the logarithmic Covariance matrix model. 
+</td>
+</tr>
+
+<tr>
+
+<td>9) Logarithmic Covariance matrix model</td>
+<td> 
+
+![formula-cov-model.png](Pictures/formula-cov-model.png)
+
+</td>
+<td>
+Once the covariance matrix model has been created, now the model can be used to generate
+statistical features.
+</td>
+</tr>
+
+<tr>
+<td>10) Shannon Entropy</td>
+<td> 
+
+![formula-entropy.png](Pictures/formula-entropy.png)
+
+</td>
+<td>
+To warp up the complexity of the signals for each 1s-window, Sj denotes each signal 
+which represent the relation within the window
+</td>
+</tr>
+
+<tr>
+<td>11) The log-energy entropy</td>
+<td> 
+
+![formular-log-ent.png](Pictures/formular-log-ent.png)
+
+</td>
+<td>
+Because the window also is divided into a half, which has 0.5s per subsection,
+those subsections' entropies and be calculated by the log-energy entropy
+</td>
+</tr>
+
+</table>
+
+<table>
+<tr><td colspan="3"> <b>3: Preprocessing </b> using Fast Fourier Transform (FFT)</td></tr>
+<tr>
+<td>Formula</td>
+<td> 
+
+![img.png](img.png)
+
+</td>
+<tr>
+<td rowspan="6">Steps</td>
+</tr>
+<tr>
+<td>1) Remove DC component</td>
+</tr>
+<tr>
+<td>2) Shut up the main power supply frequency 50 hz</td>
+</tr>
+<tr>
+<td>3) Normalized signal to the before interval [-1, 1]</td>
+</tr>
+<tr>
+<td>4) Select top 10 of the most energetic frequency</td>
+</tr>
+<tr>
+<td>5) Computed power spectrum (magnitude of each frequency component)</td>
+</tr>
+</table>
+
+<table>
+<tr><td colspan="5"> <b>4: Visualization </b> of three different emotions with power density calculated by FFT function</td></tr>
+<tr>
+<th>Emotion</th>
+<th>TP9</th>
+<th>AF7</th>
+<th>AF8</th>
+<th>TP10</th>
+</tr>
+<tr>
+<td>Neutral</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+</tr>
+<tr>
+<td>Concentration</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+</tr>
+<tr>
+<td>Relaxed</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+<td>
+
+![img_1.png](img_1.png)
+
+</td>
+</tr>
+</table>
+<hr>
 <h2>Models</h2>
 
 For the predicting models we focused on neural network models, Support Vector Machine (SVM), and
