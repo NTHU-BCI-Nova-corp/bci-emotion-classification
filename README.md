@@ -479,6 +479,9 @@ performed the analysis on both the FFTs and Statistical Features.</p>
 type of model. These metrics and the accuracy graph presented below are a good indicator
 of all good the model performs.</p>
 
+<p>It is also important to notice the following labels to understand
+the confusion matrices: <b>(0:"Relaxed", 1:"Neutral", 2:"Concentrating")</b></p>
+
 <table>
 <tr>
     <th><h3>GRU Results</h3></th>
