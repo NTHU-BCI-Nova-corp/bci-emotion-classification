@@ -206,7 +206,7 @@ values and FFTs from each of the 4 channels selected.
 
 
 
-<h2>
+<h2>EXTRA SECTION: SEED-IV Dataset </h2>
 
 <h3>Seed IV Dataset</h3>
     
