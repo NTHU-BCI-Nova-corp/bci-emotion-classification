@@ -332,78 +332,32 @@ those subsections' entropies and be calculated by the log-energy entropy
 <tr><td colspan="5"> <b>4: Visualization </b> of three different emotions with power density calculated by FFT function</td></tr>
 <tr>
 <th>Emotion</th>
-<th>TP9</th>
-<th>AF7</th>
-<th>AF8</th>
-<th>TP10</th>
+<th><p>Chanel TP9</p> (1st component)</th>
+<th><p>Chanel AF7</p> (2nd component)</th>
+<th><p>Chanel AF8</p> (3rd component)</th>
+<th><p>Chanel TP10</p> (4th component)</th>
 </tr>
 <tr>
 <td>Neutral</td>
-<td>
+<td colspan="4">
 
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
+<img alt="img_2.png" src="Pictures/FFT-neutral.png" width="100%"/>
 
 </td>
 </tr>
 <tr>
 <td>Concentration</td>
-<td>
+<td colspan="4">
 
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
+<img alt="FFT-concentrating.png" src="Pictures/FFT-concentrating.png" width="100%"/>
 </td>
 </tr>
 <tr>
 <td>Relaxed</td>
-<td>
 
-![img_1.png](img_1.png)
+<td colspan="4">
 
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
-</td>
-<td>
-
-![img_1.png](img_1.png)
-
+<img alt="img_4.png" src="Pictures/FFT-relaxed.png" width="100%"/>
 </td>
 </tr>
 </table>
