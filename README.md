@@ -164,7 +164,7 @@ train_test_split, and uncomment the second set, which uses the "x_freq" variable
         <td><b>1: Sliding window</b></td>
     </tr>
     <tr>
-        <td><b>Description: </b>Windows run from [0s – 1s], [1.5s – 2.5s], [2s – 3s], [2.5s – 3s] continuing until the of the signals</td>
+        <td><b>Description: </b>Windows run from [0s – 1s], [1.5s – 2.5s], [2s – 3s], [2.5s – 3s] continuing until the end of the signals</td>
     </tr>
 <tr>
 <td>
